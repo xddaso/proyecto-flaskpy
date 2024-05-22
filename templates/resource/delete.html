@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resource - Delete</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form method="POST" action="/resource/delete/{{ id }}">
+            <legend>Seguro que quieres borrar el registro?
+            <div class="checkbox">
+                <label for="confirmar">Confirmar</label>
+                <input type="checkbox" id="confirmar" name="confirmar" value="confirmar" required/>
+            </div>
+            <button onclick='return confirm("Seguro que quieres eliminar el registro?")' class="bloque">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

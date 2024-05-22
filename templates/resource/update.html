@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resource - Update</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form method="POST" action="/resource/update/{{ resources['id'] }}">
+            <label for="nombre" class="bloque">Nombre</label>
+            <input type="text" id="nombre" name="nombre" value="{{resources['nombre']}}" class="responsive">
+
+            <label for="apellido1" class="bloque">Primer Apellido</label>
+            <input type="text" id="apellido1" name="apellido1" value="{{resources['apellido1']}}" class="responsive">
+
+            <label for="apellido2" class="bloque">Segundo Apellido</label>
+            <input type="text" id="apellido2" name="apellido2" value="{{resources['apellido2']}}" class="responsive">
+
+            <label for="telefono" class="bloque">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" value="{{resources['teléfono']}}" class="responsive">
+            <button onclick='return confirm("Seguro que quieres guardar los cambios?")' class="bloque">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

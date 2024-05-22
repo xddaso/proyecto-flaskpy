@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resource - Read</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cliente {{ resource['id'] }}</h1>
+        <table>
+            <tr>
+                <td>Nombre</td>
+                <td>{{ resource['nombre'] }}</td>
+            </tr>
+            <tr>
+                <td>Primer Apellido</td>
+                <td>{{ resource['apellido1'] }}</td>
+            </tr>
+            <tr>
+                <td>Segundo Apellido</td>
+                <td>{{ resource['apellido2'] }}</td>
+            </tr>
+            <tr>
+                <td>Teléfono</td>
+                <td>{{ resource['teléfono'] }}</td>
+            </tr>
+        </table>
+        <br>
+        <a href="../list">Volver</a>
+    </div>
+</body>
+</html>
